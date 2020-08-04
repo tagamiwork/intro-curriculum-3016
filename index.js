@@ -9,11 +9,11 @@ const server = http.createServer((req, res) => {
 
   switch (req.method) {
     case 'GET':
-      if (req.url === '/enquetes/yaki-shabu') {
+      if (req.url === '/enquetes/mayo-kecha') {
         res.write(pug.renderFile('./form.pug', {
           path: req.url,
-          firstItem: '焼き肉',
-          secondItem: 'しゃぶしゃぶ'
+          firstItem: 'まよ',
+          secondItem: 'けちゃ'
         }));
       } else if (req.url === '/enquetes/rice-bread') {
         res.write(pug.renderFile('./form.pug', {
